@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CSS Grid Layout</title>
     <style>
+ 
       #wrapper {
         width: 700px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
       }
       .box {
         padding: 15px;
@@ -14,18 +17,35 @@
         font-size: 20px;
         font-weight: bold;
         text-align: center;
+        display: flex;
+        justify-content: center;
+      }
+      .box1, .box3 {         
+        min-height: 100px; /* 원하는 최소 높이 */
+      }
+
+      .box2, .box4 {
+        min-height: 200px; /* 원하는 최소 높이 */
       }
       .box1 {
         background-color: #3689ff;
+        grid-column: 1 / span 2; /* 첫 번째 열에서 시작해 두 칸 차지 */
+        grid-row: 1 / span 2;
       }
-      .box2 {
+     .box2 {
         background-color: #00cf12;
+        grid-column: 1;
+        grid-row: 3 / span 3;
       }
       .box3 {
         background-color: #ff9019;
-      }
-      .box4 {
+        grid-column: 3;
+        grid-row: 1 / span 2; 
+     }
+     .box4 {
         background-color: #ffd000;
+       grid-column: 3;
+       grid-row: 3 / span 3 ;
       }
     </style>
   </head>

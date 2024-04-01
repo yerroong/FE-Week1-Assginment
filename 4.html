@@ -4,6 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(245, 170, 245);
+        margin: 0;
+        height: 40px;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        background-color: black;
+        margin: 0;
+        height: 40px;
+      }
+      nav ul{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; /* 수직 중앙 정렬 */
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%; /* 전체 너비 사용 */
+      }
+      nav ul li{
+        display: inline;
+        margin-right: 10px;  /* 리스트 아이템 사이의 간격 조정*/
+      }
+      nav a{
+        color: white;
+        text-decoration: none;
+      }
+      form{
+        background-color: rgb(248, 126, 82);
+        height: 350px;
+        margin: 0;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px; 
+      }
+      input[type="text"],
+      input[type="password"] {
+        display: block;
+        height: 30px;
+        margin-bottom: 10px;
+        border: none;
+      }
+      #yellow{
+        background-color: rgb(255, 183, 0);
+        height: 400px;
+        margin: 0;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 20px; 
+      }
+      footer{
+        text-align: center;
+        margin: 0;
+        background-color: green; 
+        padding: 5px 0;   
+      }
+    </style>
   </head>
   <body>
     <header>*** 블로그 입니다</header>
@@ -21,7 +90,7 @@
           <input type="password" placeholder="비밀번호" />
         </form>
       </section>
-      <section>
+      <section id="yellow">
         <h2>안녕하세요!</h2>
         <p>HTML 실습 과제입니다.</p>
       </section>
